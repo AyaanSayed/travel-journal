@@ -35,8 +35,9 @@ header > h1 {
 }
 article.journal-entry {
   display: flex;
-  margin: 15px;
+  margin-bottom: 36px;
   max-width: 550px;
+  
 }
 
 article.journal-entry .marker {
@@ -86,4 +87,8 @@ article.journal-entry .main-image {
 .info-container p.entry-text {
   line-height: 1.5;
   font-size: 0.8rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 }
